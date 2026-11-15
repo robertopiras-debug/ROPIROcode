@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Scheda degustazione formaggi</title>
+<style>
+/*__CSS__*/
+</style>
+</head>
+<body>
+<header class="top"><div class="wrap">
+  <div class="title">
+    <span class="onaf-brand"><svg class="onaf-logo" viewBox="0 0 185 52" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo ONAF">
+  <!-- Forma di formaggio stilizzata ONAF -->
+  <path d="M4,15 A24,13 0 1,1 52,15 A24,13 0 1,1 4,15 Z" fill="none" stroke="#f39200" stroke-width="3.6"/>
+  <path d="M4,15 L4,33 A24,13 0 0,0 52,33 L52,15 A24,13 0 0,1 4,15 Z" fill="#f39200"/>
+  <!-- Scritta ONAF -->
+  <text x="62" y="37" font-family="system-ui,-apple-system,'Segoe UI',Roboto,sans-serif" font-weight="800" font-size="33" letter-spacing="1.5" fill="currentColor">ONAF</text>
+</svg><span class="brand-txt" style="display:flex;flex-direction:column;line-height:1.15"><b style="font-size:15px;letter-spacing:.01em">Atlante &amp; Degustazione Formaggi</b><small style="font-size:11px;color:var(--muted);font-weight:500">Dal territorio alla scheda sensoriale</small></span></span>
+    <div class="hdr-nav">
+      <button type="button" class="btn sm" id="atlasbtn">Atlante Italia</button>
+      <button type="button" class="btn sm" id="glossbtn">Glossario ONAF</button>
+      <button type="button" class="btn sm" id="newsheetbtn">+ Nuova scheda</button>
+      <button type="button" class="btn sm" id="listbtn"></button>
+    </div>
+  </div>
+  <div class="active-sample-bar" id="samplebar" style="display:none">
+    <div style="display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;min-width:0">
+      <span style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.04em;color:var(--accent)">Campione:</span>
+      <span id="hdrname"></span>
+      <span id="hdrric" class="ric-pill" style="display:none;margin:0"></span>
+    </div>
+    <div style="display:flex;align-items:center;gap:8px;flex-shrink:0">
+      <span id="progtxt" style="font-size:13px;font-weight:700;color:var(--ok)"></span>
+      <button type="button" class="btn sm" id="closesheetbtn" title="Chiude la scheda aperta senza eliminarla e torna all'Atlante">Chiudi scheda ✕</button>
+    </div>
+  </div>
+  <div class="progress-track" title="Avanzamento compilazione"><div class="progress-fill" id="progbar" style="width:0%"></div></div>
+  <div class="steps" id="steps"></div>
+</div></header>
+<main id="main"></main>
+<nav class="bottom"><div class="wrap">
+  <button class="btn" id="prev">Indietro</button>
+  <button class="btn primary" id="next">Avanti</button>
+</div></nav>
+
+<div class="toast" id="toast"></div>
+
+<!--__DATI__-->
+<script>
+/*__JS__*/
+</script>
+</body>
+</html>

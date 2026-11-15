@@ -1,0 +1,181 @@
+{
+ "schema": 1,
+ "territorio": {
+  "Valle d'Aosta": "Pane nero di segale valdostano, miele di rododendro o millefiori d’alta montagna, pere Martin Sec, polenta concia.",
+  "Piemonte": "Grissini stirati torinesi, pane di Langa, cugnà (mostarda d’uva), miele di tarassaco o castagno, nocciole Tonda Gentile delle Langhe.",
+  "Liguria": "Focaccia genovese poco salata, miele di erica o castagno ligure, olive taggiasche, noci e pinoli.",
+  "Lombardia": "Pane di segale o di mais (giallo), mostarda di Cremona o di Voghera, miele di tiglio o melata di bosco, polenta taragna.",
+  "Trentino-Alto Adige": "Pane di segale al cumino (Schüttelbrot / Vinschger), miele di rododendro o abete, mele renette, composte di mirtilli rossi.",
+  "Veneto": "Polenta bianca o gialla abbrustolita, radicchio rosso di Treviso tardivo, mostarda veneta, pane biscotto.",
+  "Friuli-Venezia Giulia": "Polenta di mais antico, miele di acacia del Carso, mele e pere, noci e cipolla rossa di Cavasso.",
+  "Emilia-Romagna": "Gnocco fritto o tigelle, Aceto Balsamico Tradizionale di Modena/Reggio Emilia, pere abate, fichi caramellati, piadina romagnola.",
+  "Toscana": "Pane sciocco toscano (senza sale), miele di corbezzolo o castagno della Lunigiana, fichi freschi, pere, fave fresche.",
+  "Umbria": "Torta al testo o pane sciapo umbro, miele di sulla o millefiori, tartufo nero estivo, noci.",
+  "Marche": "Crescia sfogliata di Urbino, sapa di mosto cotto, miele di girasole o acacia, fichi e pere.",
+  "Lazio": "Pane casareccio di Genzano o Lariano, fave fresche, pere, miele millefiori dell’Agro Pontino, puntarelle.",
+  "Abruzzo": "Pane casereccio abruzzese, miele di sulla o santoreggia, confettura d’uva Montepulciano (scrucchiata).",
+  "Molise": "Pane cafone molisano, miele di sulla, tartufo bianco o nero del Molise, noci e fichi secchi.",
+  "Campania": "Pane cafone cotto a legna, pomodorini del Piennolo o San Marzano, miele di acacia o castagno del Partenio, noci di Sorrento.",
+  "Puglia": "Taralli pugliesi all’olio EVO, pane di Altamura DOP, fichi freschi o mandorle di Toritto, miele di timo.",
+  "Basilicata": "Pane di Matera IGP, peperoni cruschi di Senise, miele di castagno del Vulture, fichi secchi.",
+  "Calabria": "Pane di Cerchiara o pitta calabrese, cipolla rossa di Tropea caramellata, fichi dottati di Cosenza, miele di fichi o agrumi.",
+  "Sicilia": "Pane nero di Castelvetrano, miele di zagara, timo o sulla degli Iblei, fichi d’India, mandorle di Avola.",
+  "Sardegna": "Pane carasau o pistoccu croccante, miele amaro di corbezzolo o cardo sardo, sapa di vino, fichi d’India."
+ },
+ "iconici": [
+  {
+   "id": 218,
+   "nome": "Parmigiano Reggiano",
+   "principio": "Concordanza umami e contrasto dolce-acido alla sapidità e friabilità dei cristalli di tirosina.",
+   "pane": "Pane neutro croccante o gnocco fritto caldo (per stagionature giovani 12–18 mesi).",
+   "dolce": "Gocce di Aceto Balsamico Tradizionale DOP (invecchiato ≥ 25 anni), miele millefiori delicato o mostarda di pere.",
+   "frutta": "Pere abate o Kaiser, fichi freschi, gherigli di noce.",
+   "verdure": "Sedano bianco croccante in pinzimonio, radicchio tardivo, scaglie su carpacci o risotti.",
+   "vino": "Lambrusco Grasparossa secco (giovane) o Franciacorta Satèn / Passito strutturato (oltre 30 mesi).",
+   "birra": "Belgian Dubbel o Strong Ale ambrata (note di caramello e frutta secca) o Barley Wine (per stravecchi > 36 mesi)."
+  },
+  {
+   "id": 208,
+   "nome": "Grana Padano",
+   "principio": "Equilibrio tra sapidità, tendenza dolce e granulosità.",
+   "pane": "Pane di campagna a lievitazione naturale, grissini stirati.",
+   "dolce": "Mostarda mantovana di mele campanine, miele di acacia o tiglio.",
+   "frutta": "Uva bianca, pere abate, gherigli di noce.",
+   "verdure": "Sedano bianco croccante, carciofi crudi a lamelle, asparagi.",
+   "vino": "Lugana DOC, Franciacorta Brut o Rosso Conero (per lo stravecchio).",
+   "birra": "Belgian Blond Ale o Märzen / Festbier (maltata ed equilibrata)."
+  },
+  {
+   "id": 207,
+   "nome": "Gorgonzola",
+   "principio": "Contrasto avvolgente alla piccantezza e sapidità delle muffe (Penicillium roqueforti).",
+   "pane": "Pan brioche, pane alle noci e uvetta, polenta calda abbrustolita.",
+   "dolce": "Miele di acacia o melata, confettura di fichi o cipolle rosse, cioccolato fondente 75% (con il Piccante).",
+   "frutta": "Pere Williams o abate, fichi freschi, gherigli di noce.",
+   "verdure": "Sedano croccante, indivia belga, zucca al forno o gnocchi.",
+   "vino": "Moscato d’Asti DOCG (Dolce), Passito di Pantelleria o Barolo Chinato (Piccante).",
+   "birra": "Imperial Stout / Baltic Porter (tostato e cioccolato per il Piccante) o Belgian Tripel / Dubbel (per il Dolce)."
+  },
+  {
+   "id": 197,
+   "nome": "Castelmagno",
+   "principio": "Sostegno aromatico alla pasta friabile, gessosa e naturalmente erborinata.",
+   "pane": "Pane di segale o pane casereccio tostato.",
+   "dolce": "Miele di tarassaco o millefiori d’alta montagna, cugnà piemontese.",
+   "frutta": "Noci, pere madernassa, uva nera.",
+   "verdure": "Gnocchi di patate della Val Grana, porri stufati, cardi.",
+   "vino": "Barolo DOCG o Barbaresco DOCG strutturati ed evoluti.",
+   "birra": "Belgian Dark Strong Ale (Quadrupel) o Barley Wine complesso e avvolgente."
+  },
+  {
+   "id": 253,
+   "nome": "Taleggio",
+   "principio": "Pulizia dell’untuosità e della fondente proteolisi della crosta lavata.",
+   "pane": "Pane di segale, pane ai cereali.",
+   "dolce": "Composta di cipolle rosse, mostarda di Cremona o confettura di mele cotogne.",
+   "frutta": "Pere, noci, uva rosata.",
+   "verdure": "Radicchio rosso tardivo alla griglia, polenta taragna, patate lesse.",
+   "vino": "Valtellina Superiore DOCG o Franciacorta Rosé.",
+   "birra": "Saison / Farmhouse Ale (secca e pepata, sgrassa il palato) o Bière de Garde ambrata."
+  },
+  {
+   "id": 203,
+   "nome": "Fontina",
+   "principio": "Concordanza dolce-burrosa e vegetale di alpeggio.",
+   "pane": "Pane nero valdostano di segale e frumento.",
+   "dolce": "Miele di rododendro o millefiori di montagna.",
+   "frutta": "Mele renette, pere Martin Sec, noci.",
+   "verdure": "Patate lesse di montagna, polenta concia, funghi trifolati.",
+   "vino": "Torrette Valle d’Aosta DOC o Pinot Nero dell’Alto Adige.",
+   "birra": "Bock / Doppelbock (note di crosta di pane e malto tostato) o Vienna Lager."
+  },
+  {
+   "id": 236,
+   "nome": "Puzzone di Moena / Spretz Tzaorì",
+   "principio": "Contrasto acido-vegetale all’intensa aromaticità solforata della crosta lavata.",
+   "pane": "Pane di segale al cumino (Schüttelbrot).",
+   "dolce": "Composta di mirtilli rossi o cipolle caramellate, miele di melata.",
+   "frutta": "Mele Golden, pere, noci.",
+   "verdure": "Patate lesse calde, polenta di Storo, crauti stufati.",
+   "vino": "Teroldego Rotaliano DOC o Gewürztraminer secco.",
+   "birra": "Rauchbier (affumicata) o Saison rustica ad alta carbonazione."
+  },
+  {
+   "id": 224,
+   "nome": "Pecorino Romano",
+   "principio": "Attenuazione dell’elevata sapidità e piccantezza lipolitica tramite dolcezza fresca.",
+   "pane": "Pane sciapo (senza sale) o pane carasau.",
+   "dolce": "Miele di castagno o di cardo, confettura di fichi.",
+   "frutta": "Pere, fichi freschi, mandorle.",
+   "verdure": "Fave fresche crudo, carciofi romaneschi, puntarelle.",
+   "vino": "Cannonau di Sardegna DOC o Cesanese del Piglio DOCG.",
+   "birra": "Scotch Ale / Wee Heavy (dolcezza maltata) o Doppelbock."
+  },
+  {
+   "id": 202,
+   "nome": "Fiore Sardo",
+   "principio": "Armonia con le note affumicate, animali e piccanti della pasta dura.",
+   "pane": "Pane carasau o pistoccu croccante.",
+   "dolce": "Miele amaro di corbezzolo, sapa di mosto cotto.",
+   "frutta": "Fichi d’India, mandorle tostate.",
+   "verdure": "Sedano croccante, carciofi spinosi sardi crudi, fave.",
+   "vino": "Carignano del Sulcis Riserva DOC o Cannonau Riserva.",
+   "birra": "Rauchbier (richiamo all’affumicatura) o Porter / Brown Ale."
+  },
+  {
+   "id": 214,
+   "nome": "Mozzarella di Bufala Campana",
+   "principio": "Esaltazione della succosità lattica e della leggera acidità fresca.",
+   "pane": "Pane cafone campano o focaccia neutra poco unta.",
+   "dolce": "Nessun dolce (evitare mieli che coprono il latte fresco); un filo di olio EVO fruttato leggero.",
+   "frutta": "Fichi fioroni (in abbinamento estivo), melone bianco.",
+   "verdure": "Pomodorini del Piennolo, basilico fresco, zucchine grigliate.",
+   "vino": "Asprinio di Aversa DOC o Falanghina dei Campi Flegrei DOC.",
+   "birra": "Blanche / Witbier (fresca e agrumata) o Pilsner / Kellerbier."
+  },
+  {
+   "id": 269,
+   "nome": "Burrata di Andria",
+   "principio": "Contrasto croccante e acidulo alla ricchezza lipidica della stracciatella e panna.",
+   "pane": "Pane di Altamura DOP tostato o taralli pugliesi.",
+   "dolce": "Pomodorini confit o composta leggera di fichi.",
+   "frutta": "Fichi freschi, mandorle di Toritto.",
+   "verdure": "Pomodori ramati, rucola selvatica, olio EVO Coratina.",
+   "vino": "Castel del Monte Bianco DOC o Metodo Classico Brut.",
+   "birra": "Berliner Weisse / Gose (acidità lattica che sgrassa) o Saison chiara."
+  },
+  {
+   "id": 243,
+   "nome": "Roccaverano",
+   "principio": "Accompagnamento delicato alla nota caprina e lattico-acida.",
+   "pane": "Grissini stirati, pane bianco casereccio.",
+   "dolce": "Miele di acacia o di tiglio, composta di albicocche.",
+   "frutta": "Nocciole Piemonte IGP, pere, fragole.",
+   "verdure": "Insalatina di valeriana, asparagi bianchi, zucchine.",
+   "vino": "Alta Langa DOCG Brut o Moscato d’Asti (con versioni affinate).",
+   "birra": "Blanche / Weizen (note acidule e speziate) o Gueuze / Lambic giovane (per versioni affinate)."
+  },
+  {
+   "id": 249,
+   "nome": "Squacquerone di Romagna",
+   "principio": "Sostegno caldo e croccante alla cremosità madreperlacea e acidula.",
+   "pane": "Piadina romagnola calda sfogliata.",
+   "dolce": "Fichi caramellati alla romagnola.",
+   "frutta": "Fichi freschi, uva bianca.",
+   "verdure": "Rucola selvatica fresca, radicchio di campo.",
+   "vino": "Albana di Romagna Secco DOCG o Sangiovese di Romagna giovane.",
+   "birra": "Kellerbier / Helles (morbida e maltata) o Blanche."
+  },
+  {
+   "id": 205,
+   "nome": "Formaggio di Fossa di Sogliano",
+   "principio": "Bilanciamento della complessità fermentativa di sottobosco, tartufo e piccantezza.",
+   "pane": "Piadina sfogliata o pane casereccio tostato.",
+   "dolce": "Sapa romagnola, miele di castagno, fichi caramellati.",
+   "frutta": "Pere, noci, uva nera.",
+   "verdure": "Passatelli in brodo, tagliatelle o risotti mantecati.",
+   "vino": "Sangiovese Superiore Riserva o Albana Passito.",
+   "birra": "Belgian Dubbel / Quadrupel o Old Ale."
+  }
+ ]
+}

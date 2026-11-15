@@ -1,0 +1,2055 @@
+{
+ "schema": 1,
+ "liste": {
+  "riconoscimento": [
+   {
+    "c": "dop",
+    "l": "DOP"
+   },
+   {
+    "c": "igp",
+    "l": "IGP"
+   },
+   {
+    "c": "stg",
+    "l": "STG"
+   },
+   {
+    "c": "pat",
+    "l": "PAT"
+   },
+   {
+    "c": "deco",
+    "l": "DECO"
+   }
+  ],
+  "forma": [
+   {
+    "c": "cilindrica",
+    "l": "Cilindrica"
+   },
+   {
+    "c": "parallelepipeda_a_base_quadrata",
+    "l": "Parallelepipeda a base quadrata"
+   },
+   {
+    "c": "parallelepipeda_a_base_rettangolare",
+    "l": "Parallelepipeda a base rettangolare"
+   },
+   {
+    "c": "sferica",
+    "l": "Sferica"
+   },
+   {
+    "c": "elissoidale",
+    "l": "Elissoidale (ovoidale)"
+   },
+   {
+    "c": "piramidale",
+    "l": "Piramidale"
+   },
+   {
+    "c": "tronco_conica",
+    "l": "Tronco-conica"
+   },
+   {
+    "c": "conica",
+    "l": "Conica"
+   },
+   {
+    "c": "cubica",
+    "l": "Cubica"
+   },
+   {
+    "c": "indefinita",
+    "l": "Indefinita"
+   }
+  ],
+  "facce": [
+   {
+    "c": "piane",
+    "l": "Piane"
+   },
+   {
+    "c": "concave",
+    "l": "Concave"
+   },
+   {
+    "c": "convesse",
+    "l": "Convesse (bombate)"
+   }
+  ],
+  "scalzo": [
+   {
+    "c": "diritto",
+    "l": "Diritto"
+   },
+   {
+    "c": "concavo",
+    "l": "Concavo"
+   },
+   {
+    "c": "convesso",
+    "l": "Convesso (bombato)"
+   },
+   {
+    "c": "obliquo",
+    "l": "Obliquo"
+   }
+  ],
+  "tipsup": [
+   {
+    "c": "pelle",
+    "l": "Pelle (sottile pellicola elastica, mozzarella)"
+   },
+   {
+    "c": "buccia",
+    "l": "Buccia (strato sottile, moderatamente consistente, tenero, Roccaverano Dop)"
+   },
+   {
+    "c": "crosta",
+    "l": "Crosta (strato consistente, da moderatamente duro a duro)"
+   },
+   {
+    "c": "senza_crosta",
+    "l": "Senza crosta"
+   }
+  ],
+  "colore": [
+   {
+    "c": "bianco",
+    "l": "Bianco"
+   },
+   {
+    "c": "avorio",
+    "l": "Avorio"
+   },
+   {
+    "c": "giallo_paglierino",
+    "l": "Giallo paglierino"
+   },
+   {
+    "c": "giallo_dorato",
+    "l": "Giallo dorato"
+   },
+   {
+    "c": "giallo_ambrato",
+    "l": "Giallo ambrato"
+   },
+   {
+    "c": "ocra",
+    "l": "Ocra"
+   },
+   {
+    "c": "salmone",
+    "l": "Salmone"
+   },
+   {
+    "c": "rosato",
+    "l": "Rosato"
+   },
+   {
+    "c": "aranciato",
+    "l": "Aranciato"
+   },
+   {
+    "c": "rossiccio",
+    "l": "Rossiccio"
+   },
+   {
+    "c": "marrone",
+    "l": "Marrone"
+   },
+   {
+    "c": "grigio",
+    "l": "Grigio"
+   },
+   {
+    "c": "verde",
+    "l": "Verde"
+   },
+   {
+    "c": "nero",
+    "l": "Nero"
+   }
+  ],
+  "sottocrosta": [
+   {
+    "c": "assente",
+    "l": "Assente"
+   },
+   {
+    "c": "sottile",
+    "l": "Sottile"
+   },
+   {
+    "c": "medio",
+    "l": "Medio"
+   },
+   {
+    "c": "spesso",
+    "l": "Spesso"
+   }
+  ],
+  "discont": [
+   {
+    "c": "sfoglia",
+    "l": "Sfoglia (sfogliatura)"
+   },
+   {
+    "c": "distacco",
+    "l": "Distacco (strappo)"
+   },
+   {
+    "c": "gessosita",
+    "l": "Gessosità"
+   },
+   {
+    "c": "colatura",
+    "l": "Colatura (rammollimento)"
+   }
+  ],
+  "dim": [
+   {
+    "c": "piccola",
+    "l": "Piccola"
+   },
+   {
+    "c": "media",
+    "l": "Media"
+   },
+   {
+    "c": "grossa",
+    "l": "Grossa"
+   }
+  ],
+  "distr": [
+   {
+    "c": "uniforme",
+    "l": "Uniforme (regolare)"
+   },
+   {
+    "c": "non_uniforme",
+    "l": "Non uniforme (localizzata)"
+   }
+  ],
+  "trig": [
+   {
+    "c": "astringente",
+    "l": "Astringente (caco acerbo, carciofo, tannino)"
+   },
+   {
+    "c": "piccante",
+    "l": "Piccante (pepe, peperoncino)"
+   },
+   {
+    "c": "pungente",
+    "l": "Pungente (ammoniaca, aceto, senape)"
+   },
+   {
+    "c": "rinfrescante",
+    "l": "Rinfrescante (mentolo)"
+   },
+   {
+    "c": "bruciante",
+    "l": "Bruciante (alcol)"
+   },
+   {
+    "c": "metallico",
+    "l": "Metallico (ferroso, sangue)"
+   }
+  ],
+  "strInt": [
+   {
+    "c": "durezza",
+    "l": "Durezza (resistenza alla masticazione)"
+   },
+   {
+    "c": "friabilita",
+    "l": "Friabilità (tendenza a rompersi in frammenti)"
+   },
+   {
+    "c": "adesivita",
+    "l": "Adesività (sforzo della lingua per staccare il formaggio dal palato e dai denti)"
+   },
+   {
+    "c": "umidita",
+    "l": "Umidità (alto contenuto di liquidi)"
+   },
+   {
+    "c": "solubilita",
+    "l": "Solubilità (fusione rapida nella saliva)"
+   }
+  ],
+  "strAltri": [
+   {
+    "c": "grumosa",
+    "l": "Grumosa (percezione di piccole masse rapprese)"
+   },
+   {
+    "c": "granulosa",
+    "l": "Granulosa (percezione di granuli compatti)"
+   },
+   {
+    "c": "gessosa",
+    "l": "Gessosa"
+   },
+   {
+    "c": "elastica",
+    "l": "Elastica"
+   },
+   {
+    "c": "deformabile",
+    "l": "Deformabile"
+   },
+   {
+    "c": "untuosa",
+    "l": "Untuosa"
+   },
+   {
+    "c": "fibrosa",
+    "l": "Fibrosa"
+   },
+   {
+    "c": "con_cristalli",
+    "l": "Con cristalli (percezione di granuli vetrosi)"
+   }
+  ],
+  "pers": [
+   {
+    "c": "bassa",
+    "l": "Bassa",
+    "hint": "3 secondi"
+   },
+   {
+    "c": "medio_bassa",
+    "l": "Medio-bassa",
+    "hint": "4–9 secondi"
+   },
+   {
+    "c": "media",
+    "l": "Media",
+    "hint": "10–15 secondi"
+   },
+   {
+    "c": "medio_elevata",
+    "l": "Medio-elevata",
+    "hint": "16–29 secondi"
+   },
+   {
+    "c": "elevata",
+    "l": "Elevata",
+    "hint": "30 secondi"
+   }
+  ],
+  "regolarita": [
+   {
+    "c": "regolare",
+    "l": "Regolare"
+   },
+   {
+    "c": "irregolare",
+    "l": "Irregolare"
+   }
+  ],
+  "uniformita": [
+   {
+    "c": "uniforme",
+    "l": "Uniforme"
+   },
+   {
+    "c": "non_uniforme",
+    "l": "Non uniforme"
+   }
+  ],
+  "carica": [
+   {
+    "c": "carico",
+    "l": "Carico"
+   },
+   {
+    "c": "scarico",
+    "l": "Scarico"
+   }
+  ],
+  "presenza": [
+   {
+    "c": "assente",
+    "l": "Assente"
+   },
+   {
+    "c": "presente",
+    "l": "Presente"
+   }
+  ],
+  "crosta_atlante": [
+   {
+    "c": "ammuffita",
+    "l": "Ammuffita"
+   },
+   {
+    "c": "artificiale",
+    "l": "Artificiale"
+   },
+   {
+    "c": "assente",
+    "l": "Assente"
+   },
+   {
+    "c": "buccia",
+    "l": "Buccia"
+   },
+   {
+    "c": "con_erosioni",
+    "l": "Con erosioni"
+   },
+   {
+    "c": "con_muffe",
+    "l": "Con muffe"
+   },
+   {
+    "c": "fiorita",
+    "l": "Fiorita"
+   },
+   {
+    "c": "lavata",
+    "l": "Lavata"
+   },
+   {
+    "c": "pelle",
+    "l": "Pelle"
+   },
+   {
+    "c": "pulita",
+    "l": "Pulita"
+   },
+   {
+    "c": "trattata",
+    "l": "Trattata"
+   }
+  ]
+ },
+ "gruppi": {
+  "aspetto": [
+   {
+    "c": "morfologia",
+    "l": "Morfologia",
+    "voci": [
+     {
+      "c": "liscia",
+      "l": "Liscia"
+     },
+     {
+      "c": "rugosa",
+      "l": "Rugosa"
+     },
+     {
+      "c": "canestrata",
+      "l": "Canestrata"
+     },
+     {
+      "c": "con_trama_di_tela",
+      "l": "Con trama di tela"
+     },
+     {
+      "c": "impronta_della_stuoia_della_griglia_dello_stampo",
+      "l": "Impronta della stuoia, della griglia, dello stampo"
+     },
+     {
+      "c": "con_marchio",
+      "l": "Con marchio"
+     }
+    ]
+   },
+   {
+    "c": "caratteristiche",
+    "l": "Caratteristiche",
+    "voci": [
+     {
+      "c": "pulita",
+      "l": "Pulita"
+     },
+     {
+      "c": "ammuffita",
+      "l": "Ammuffita"
+     },
+     {
+      "c": "fiorita",
+      "l": "Fiorita"
+     },
+     {
+      "c": "macchiata",
+      "l": "Macchiata"
+     },
+     {
+      "c": "lavata",
+      "l": "Lavata"
+     },
+     {
+      "c": "trattata",
+      "l": "Trattata (cappata)"
+     },
+     {
+      "c": "con_morchia",
+      "l": "Con morchia"
+     },
+     {
+      "c": "con_agatura",
+      "l": "Con agatura"
+     }
+    ]
+   },
+   {
+    "c": "liquidi",
+    "l": "Liquidi",
+    "voci": [
+     {
+      "c": "umida",
+      "l": "Umida (essudata)"
+     },
+     {
+      "c": "lucida",
+      "l": "Lucida"
+     },
+     {
+      "c": "secca",
+      "l": "Secca"
+     },
+     {
+      "c": "untuosa",
+      "l": "Untuosa"
+     }
+    ]
+   },
+   {
+    "c": "consistenza",
+    "l": "Consistenza",
+    "voci": [
+     {
+      "c": "morbida",
+      "l": "Morbida"
+     },
+     {
+      "c": "semidura",
+      "l": "Semidura"
+     },
+     {
+      "c": "dura",
+      "l": "Dura"
+     },
+     {
+      "c": "elastica",
+      "l": "Elastica"
+     }
+    ]
+   },
+   {
+    "c": "irregolarita",
+    "l": "Irregolarità",
+    "voci": [
+     {
+      "c": "fessurata",
+      "l": "Fessurata"
+     },
+     {
+      "c": "screpolata",
+      "l": "Screpolata"
+     },
+     {
+      "c": "crepata",
+      "l": "Crepata"
+     },
+     {
+      "c": "riparata",
+      "l": "Riparata"
+     },
+     {
+      "c": "con_erosioni",
+      "l": "Con erosioni"
+     }
+    ]
+   }
+  ],
+  "occhiatura": [
+   {
+    "c": "forma",
+    "l": "Forma",
+    "voci": [
+     {
+      "c": "regolare",
+      "l": "Regolare (rotonda)"
+     },
+     {
+      "c": "irregolare",
+      "l": "Irregolare (deformata)"
+     }
+    ]
+   },
+   {
+    "c": "dimensione",
+    "l": "Dimensione",
+    "voci": [
+     {
+      "c": "piccola",
+      "l": "Piccola (fine)"
+     },
+     {
+      "c": "media",
+      "l": "Media"
+     },
+     {
+      "c": "grande",
+      "l": "Grande"
+     }
+    ]
+   },
+   {
+    "c": "distribuzione",
+    "l": "Distribuzione",
+    "voci": [
+     {
+      "c": "uniforme",
+      "l": "Uniforme (regolare)"
+     },
+     {
+      "c": "non_uniforme",
+      "l": "Non uniforme (localizzata)"
+     }
+    ]
+   },
+   {
+    "c": "quantita",
+    "l": "Quantità",
+    "voci": [
+     {
+      "c": "rada",
+      "l": "Rada (spargola)"
+     },
+     {
+      "c": "diffusa",
+      "l": "Diffusa"
+     }
+    ]
+   },
+   {
+    "c": "altro",
+    "l": "Altro",
+    "voci": [
+     {
+      "c": "lucida",
+      "l": "Lucida"
+     },
+     {
+      "c": "con_muffe",
+      "l": "Con muffe"
+     }
+    ]
+   }
+  ],
+  "erbor": [
+   {
+    "c": "colore",
+    "l": "Colore",
+    "voci": [
+     {
+      "c": "grigio",
+      "l": "Grigio"
+     },
+     {
+      "c": "verde",
+      "l": "Verde"
+     },
+     {
+      "c": "grigio_verde",
+      "l": "Grigio-verde"
+     },
+     {
+      "c": "blu",
+      "l": "Blu"
+     },
+     {
+      "c": "giallo",
+      "l": "Giallo"
+     },
+     {
+      "c": "aranciato",
+      "l": "Aranciato"
+     },
+     {
+      "c": "marrone",
+      "l": "Marrone"
+     }
+    ]
+   },
+   {
+    "c": "distribuzione",
+    "l": "Distribuzione",
+    "voci": [
+     {
+      "c": "uniforme",
+      "l": "Uniforme (regolare)"
+     },
+     {
+      "c": "non_uniforme",
+      "l": "Non uniforme (localizzata)"
+     }
+    ]
+   },
+   {
+    "c": "quantita",
+    "l": "Quantità",
+    "voci": [
+     {
+      "c": "rada",
+      "l": "Rada"
+     },
+     {
+      "c": "diffusa",
+      "l": "Diffusa"
+     }
+    ]
+   }
+  ],
+  "strpasta": [
+   {
+    "c": "contenuto_di_acqua",
+    "l": "Contenuto di acqua",
+    "voci": [
+     {
+      "c": "cremosa",
+      "l": "Cremosa (Squacquerone)"
+     },
+     {
+      "c": "molle",
+      "l": "Molle (Taleggio)"
+     },
+     {
+      "c": "tenera",
+      "l": "Tenera (Pecorino fresco)"
+     },
+     {
+      "c": "semidura",
+      "l": "Semidura (Fontina)"
+     },
+     {
+      "c": "dura",
+      "l": "Dura (Parmigiano Reggiano)"
+     }
+    ]
+   },
+   {
+    "c": "liquidi_superficie",
+    "l": "Liquidi superficie",
+    "voci": [
+     {
+      "c": "umida",
+      "l": "Umida"
+     },
+     {
+      "c": "secca",
+      "l": "Secca"
+     },
+     {
+      "c": "untuosa",
+      "l": "Untuosa"
+     }
+    ]
+   },
+   {
+    "c": "consistenza",
+    "l": "Consistenza",
+    "voci": [
+     {
+      "c": "rigida",
+      "l": "Rigida"
+     },
+     {
+      "c": "elastica",
+      "l": "Elastica"
+     },
+     {
+      "c": "compatta",
+      "l": "Compatta"
+     },
+     {
+      "c": "deformabile",
+      "l": "Deformabile"
+     },
+     {
+      "c": "friabile",
+      "l": "Friabile"
+     }
+    ]
+   },
+   {
+    "c": "morfologia",
+    "l": "Morfologia",
+    "voci": [
+     {
+      "c": "granulosa",
+      "l": "Granulosa"
+     },
+     {
+      "c": "sabbiosa_farinosa_gessosa",
+      "l": "Sabbiosa/Farinosa/Gessosa"
+     },
+     {
+      "c": "rugosa",
+      "l": "Rugosa"
+     },
+     {
+      "c": "liscia",
+      "l": "Liscia"
+     },
+     {
+      "c": "fibrosa",
+      "l": "Fibrosa"
+     }
+    ]
+   }
+  ],
+  "categoria": [
+   {
+    "c": "latte",
+    "l": "Tipologia latte",
+    "voci": [
+     {
+      "c": "vacca",
+      "l": "Vacca"
+     },
+     {
+      "c": "pecora",
+      "l": "Pecora"
+     },
+     {
+      "c": "capra",
+      "l": "Capra"
+     },
+     {
+      "c": "bufala",
+      "l": "Bufala"
+     },
+     {
+      "c": "misto_vacca_pecora",
+      "l": "Misto (Vacca-Pecora)"
+     },
+     {
+      "c": "misto_vacca_capra",
+      "l": "Misto (Vacca-Capra)"
+     },
+     {
+      "c": "misto_pecora_capra",
+      "l": "Misto (Pecora-Capra)"
+     },
+     {
+      "c": "misto_vacca_pecora_capra",
+      "l": "Misto (Vacca-Pecora-Capra)"
+     },
+     {
+      "c": "misto_bufala_vacca",
+      "l": "Misto (Bufala-Vacca)"
+     }
+    ]
+   },
+   {
+    "c": "stato_latte",
+    "l": "Stato del latte",
+    "voci": [
+     {
+      "c": "crudo",
+      "l": "Crudo"
+     },
+     {
+      "c": "termizzato",
+      "l": "Termizzato"
+     },
+     {
+      "c": "pastorizzato",
+      "l": "Pastorizzato"
+     },
+     {
+      "c": "intero",
+      "l": "Intero"
+     },
+     {
+      "c": "parz_scremato",
+      "l": "Parz. scremato"
+     },
+     {
+      "c": "scremato",
+      "l": "Scremato"
+     },
+     {
+      "c": "altro",
+      "l": "Altro"
+     }
+    ]
+   },
+   {
+    "c": "cagliata",
+    "l": "Temperatura cagliata",
+    "voci": [
+     {
+      "c": "pasta_cruda",
+      "l": "Pasta cruda"
+     },
+     {
+      "c": "pasta_semicotta",
+      "l": "Pasta semicotta"
+     },
+     {
+      "c": "pasta_cotta",
+      "l": "Pasta cotta"
+     }
+    ]
+   },
+   {
+    "c": "pasta",
+    "l": "Consistenza pasta",
+    "voci": [
+     {
+      "c": "liquida",
+      "l": "Liquida"
+     },
+     {
+      "c": "semiliquida",
+      "l": "Semiliquida"
+     },
+     {
+      "c": "cremosa",
+      "l": "Cremosa"
+     },
+     {
+      "c": "pasta_molle",
+      "l": "Pasta molle"
+     },
+     {
+      "c": "pasta_semidura",
+      "l": "Pasta semidura"
+     },
+     {
+      "c": "pasta_dura",
+      "l": "Pasta dura"
+     }
+    ]
+   },
+   {
+    "c": "stagionatura",
+    "l": "Tempo stagionatura",
+    "voci": [
+     {
+      "c": "freschissimo",
+      "l": "Freschissimo"
+     },
+     {
+      "c": "fresco",
+      "l": "Fresco"
+     },
+     {
+      "c": "semistagionato",
+      "l": "Semistagionato"
+     },
+     {
+      "c": "stagionato",
+      "l": "Stagionato"
+     },
+     {
+      "c": "molto_stagionato",
+      "l": "Molto stagionato"
+     }
+    ]
+   },
+   {
+    "c": "tecnologia",
+    "l": "Tecnologia lavorazione",
+    "voci": [
+     {
+      "c": "pasta_filata",
+      "l": "Pasta filata"
+     },
+     {
+      "c": "erborinato",
+      "l": "Erborinato"
+     },
+     {
+      "c": "crosta_lavata",
+      "l": "Crosta lavata"
+     },
+     {
+      "c": "pressato",
+      "l": "Pressato"
+     },
+     {
+      "c": "affumicato",
+      "l": "Affumicato"
+     },
+     {
+      "c": "affinato",
+      "l": "Affinato"
+     },
+     {
+      "c": "aromatizzato",
+      "l": "Aromatizzato"
+     },
+     {
+      "c": "cacioricotta",
+      "l": "Cacioricotta"
+     },
+     {
+      "c": "cotto",
+      "l": "Cotto"
+     },
+     {
+      "c": "farcito",
+      "l": "Farcito"
+     },
+     {
+      "c": "fermentato",
+      "l": "Fermentato"
+     },
+     {
+      "c": "ricotto",
+      "l": "Ricotto"
+     }
+    ]
+   },
+   {
+    "c": "caglio",
+    "l": "Tipologia caglio",
+    "voci": [
+     {
+      "c": "vitello",
+      "l": "Vitello"
+     },
+     {
+      "c": "agnello",
+      "l": "Agnello"
+     },
+     {
+      "c": "capretto",
+      "l": "Capretto"
+     },
+     {
+      "c": "bovino",
+      "l": "Bovino"
+     },
+     {
+      "c": "suino",
+      "l": "Suino"
+     },
+     {
+      "c": "animale",
+      "l": "Animale"
+     },
+     {
+      "c": "vegetale",
+      "l": "Vegetale"
+     },
+     {
+      "c": "microbico",
+      "l": "Microbico"
+     },
+     {
+      "c": "acidificante",
+      "l": "Acidificante"
+     }
+    ]
+   },
+   {
+    "c": "coagulazione",
+    "l": "Tipologia coagulazione",
+    "voci": [
+     {
+      "c": "presamica",
+      "l": "Presamica"
+     },
+     {
+      "c": "acida",
+      "l": "Acida"
+     },
+     {
+      "c": "acido_presamica",
+      "l": "Acido-Presamica"
+     },
+     {
+      "c": "presamico_acida",
+      "l": "Presamico-Acida"
+     },
+     {
+      "c": "acido_termica",
+      "l": "Acido-Termica"
+     },
+     {
+      "c": "termico_presamica",
+      "l": "Termico-Presamica"
+     }
+    ]
+   }
+  ],
+  "presentazione": [
+   {
+    "c": "stato_campione",
+    "l": "Stato campione",
+    "voci": [
+     {
+      "c": "forma_intera",
+      "l": "Forma intera"
+     },
+     {
+      "c": "porzione",
+      "l": "Porzione"
+     },
+     {
+      "c": "spicchio",
+      "l": "Spicchio"
+     },
+     {
+      "c": "fetta",
+      "l": "Fetta"
+     }
+    ]
+   },
+   {
+    "c": "crosta",
+    "l": "Crosta",
+    "voci": [
+     {
+      "c": "presente",
+      "l": "Presente"
+     },
+     {
+      "c": "rimossa",
+      "l": "Rimossa"
+     },
+     {
+      "c": "raschiata",
+      "l": "Raschiata"
+     }
+    ]
+   },
+   {
+    "c": "temperatura",
+    "l": "Temperatura",
+    "voci": [
+     {
+      "c": "da_frigo",
+      "l": "Da frigo"
+     },
+     {
+      "c": "ambiente",
+      "l": "Ambiente"
+     },
+     {
+      "c": "fuori_frigo_da_tempo",
+      "l": "Fuori frigo da tempo"
+     }
+    ]
+   },
+   {
+    "c": "conservazione",
+    "l": "Conservazione",
+    "voci": [
+     {
+      "c": "sottovuoto",
+      "l": "Sottovuoto"
+     },
+     {
+      "c": "carta",
+      "l": "Carta"
+     },
+     {
+      "c": "campana",
+      "l": "Campana"
+     }
+    ]
+   },
+   {
+    "c": "accompagnamenti",
+    "l": "Accompagnamenti",
+    "voci": [
+     {
+      "c": "pane_neutro",
+      "l": "Pane neutro"
+     },
+     {
+      "c": "acqua",
+      "l": "Acqua"
+     },
+     {
+      "c": "altro",
+      "l": "Altro"
+     }
+    ]
+   },
+   {
+    "c": "anomalie",
+    "l": "Anomalie",
+    "voci": [
+     {
+      "c": "muffe",
+      "l": "Muffe"
+     },
+     {
+      "c": "crepe",
+      "l": "Crepe"
+     },
+     {
+      "c": "essudato",
+      "l": "Essudato"
+     }
+    ]
+   }
+  ],
+  "abbinamenti": [
+   {
+    "c": "pane_sostegno",
+    "l": "Pane & Sostegno",
+    "voci": [
+     {
+      "c": "pane_bianco_neutrale",
+      "l": "Pane bianco neutrale"
+     },
+     {
+      "c": "pane_casereccio",
+      "l": "Pane casereccio"
+     },
+     {
+      "c": "pane_sciocco",
+      "l": "Pane sciocco (senza sale)"
+     },
+     {
+      "c": "pane_di_segale_nero",
+      "l": "Pane di segale / nero"
+     },
+     {
+      "c": "pane_alle_noci_uvetta",
+      "l": "Pane alle noci / uvetta"
+     },
+     {
+      "c": "grissini_stirati",
+      "l": "Grissini stirati"
+     },
+     {
+      "c": "pane_carasau_pistoccu",
+      "l": "Pane carasau / pistoccu"
+     },
+     {
+      "c": "focaccia_piadina",
+      "l": "Focaccia / Piadina"
+     },
+     {
+      "c": "polenta_calda",
+      "l": "Polenta calda"
+     }
+    ]
+   },
+   {
+    "c": "mieli_confetture_salse",
+    "l": "Mieli, Confetture & Salse",
+    "voci": [
+     {
+      "c": "miele_di_acacia_millefiori",
+      "l": "Miele di acacia / millefiori"
+     },
+     {
+      "c": "miele_di_castagno",
+      "l": "Miele di castagno"
+     },
+     {
+      "c": "miele_di_corbezzolo_cardo",
+      "l": "Miele di corbezzolo / cardo"
+     },
+     {
+      "c": "miele_di_agrumi_sulla",
+      "l": "Miele di agrumi / sulla"
+     },
+     {
+      "c": "confettura_di_fichi",
+      "l": "Confettura di fichi"
+     },
+     {
+      "c": "composta_di_pere_mele",
+      "l": "Composta di pere / mele"
+     },
+     {
+      "c": "composta_di_cipolle_rosse",
+      "l": "Composta di cipolle rosse"
+     },
+     {
+      "c": "mostarda_di_frutta",
+      "l": "Mostarda di frutta"
+     },
+     {
+      "c": "aceto_balsamico_tradizionale",
+      "l": "Aceto Balsamico Tradizionale"
+     },
+     {
+      "c": "sapa_mosto_cotto",
+      "l": "Sapa / Mosto cotto"
+     },
+     {
+      "c": "olio_evo",
+      "l": "Olio EVO"
+     }
+    ]
+   },
+   {
+    "c": "frutta_fresca_secca",
+    "l": "Frutta Fresca & Secca",
+    "voci": [
+     {
+      "c": "pere_fresche",
+      "l": "Pere fresche"
+     },
+     {
+      "c": "fichi_freschi",
+      "l": "Fichi freschi"
+     },
+     {
+      "c": "mele",
+      "l": "Mele"
+     },
+     {
+      "c": "uva",
+      "l": "Uva"
+     },
+     {
+      "c": "fragole_frutti_di_bosco",
+      "l": "Fragole / Frutti di bosco"
+     },
+     {
+      "c": "noci",
+      "l": "Noci"
+     },
+     {
+      "c": "nocciole",
+      "l": "Nocciole"
+     },
+     {
+      "c": "mandorle",
+      "l": "Mandorle"
+     },
+     {
+      "c": "cioccolato_fondente",
+      "l": "Cioccolato fondente"
+     }
+    ]
+   },
+   {
+    "c": "verdure_cucina",
+    "l": "Verdure & Cucina",
+    "voci": [
+     {
+      "c": "sedano_ravanelli",
+      "l": "Sedano / Ravanelli"
+     },
+     {
+      "c": "radicchio_tardivo",
+      "l": "Radicchio tardivo"
+     },
+     {
+      "c": "insalatina_rucola",
+      "l": "Insalatina / Rucola"
+     },
+     {
+      "c": "fave_fresche",
+      "l": "Fave fresche"
+     },
+     {
+      "c": "carciofi_crudi",
+      "l": "Carciofi crudi"
+     },
+     {
+      "c": "pomodori_basilico",
+      "l": "Pomodori / Basilico"
+     },
+     {
+      "c": "patate_lesse",
+      "l": "Patate lesse"
+     },
+     {
+      "c": "verdure_grigliate",
+      "l": "Verdure grigliate"
+     },
+     {
+      "c": "gnocchi_risotto",
+      "l": "Gnocchi / Risotto"
+     }
+    ]
+   },
+   {
+    "c": "vino",
+    "l": "Vino",
+    "voci": [
+     {
+      "c": "bianco_fresco_e_sapido",
+      "l": "Bianco fresco e sapido"
+     },
+     {
+      "c": "bianco_strutturato_aromatico",
+      "l": "Bianco strutturato / aromatico"
+     },
+     {
+      "c": "spumante_metodo_classico",
+      "l": "Spumante Metodo Classico"
+     },
+     {
+      "c": "rosso_giovane_medio_corpo",
+      "l": "Rosso giovane / medio corpo"
+     },
+     {
+      "c": "rosso_strutturato_ed_evoluto",
+      "l": "Rosso strutturato ed evoluto"
+     },
+     {
+      "c": "vino_passito_liquoroso",
+      "l": "Vino Passito / Liquoroso"
+     }
+    ]
+   },
+   {
+    "c": "birra_artigianale",
+    "l": "Birra Artigianale",
+    "voci": [
+     {
+      "c": "pilsner_helles_kellerbier",
+      "l": "Pilsner / Helles / Kellerbier"
+     },
+     {
+      "c": "blanche_weizen",
+      "l": "Blanche / Weizen"
+     },
+     {
+      "c": "saison_farmhouse_ale",
+      "l": "Saison / Farmhouse Ale"
+     },
+     {
+      "c": "bock_doppelbock_marzen",
+      "l": "Bock / Doppelbock / Märzen"
+     },
+     {
+      "c": "belgian_dubbel_tripel_quadrupel",
+      "l": "Belgian Dubbel / Tripel / Quadrupel"
+     },
+     {
+      "c": "porter_imperial_stout_barley_wine",
+      "l": "Porter / Imperial Stout / Barley Wine"
+     },
+     {
+      "c": "rauchbier",
+      "l": "Rauchbier (affumicata)"
+     },
+     {
+      "c": "sour_gose_lambic",
+      "l": "Sour / Gose / Lambic"
+     }
+    ]
+   }
+  ]
+ },
+ "descrittori": [
+  {
+   "c": "lattico",
+   "l": "Lattico",
+   "sub": [
+    {
+     "c": "lattico_fresco",
+     "l": "Lattico fresco",
+     "voci": [
+      {
+       "c": "latte_fresco",
+       "l": "Latte fresco"
+      },
+      {
+       "c": "cagliata_fresca",
+       "l": "Cagliata fresca"
+      },
+      {
+       "c": "panna_fresca",
+       "l": "Panna fresca"
+      },
+      {
+       "c": "burro_fresco",
+       "l": "Burro fresco"
+      }
+     ]
+    },
+    {
+     "c": "lattico_cotto",
+     "l": "Lattico cotto",
+     "voci": [
+      {
+       "c": "burro_fuso",
+       "l": "Burro fuso"
+      },
+      {
+       "c": "burro_cotto",
+       "l": "Burro cotto"
+      },
+      {
+       "c": "latte_bollito",
+       "l": "Latte bollito"
+      }
+     ]
+    },
+    {
+     "c": "lattico_acido",
+     "l": "Lattico acido",
+     "voci": [
+      {
+       "c": "latte_acido",
+       "l": "Latte acido"
+      },
+      {
+       "c": "yogurt",
+       "l": "Yogurt"
+      },
+      {
+       "c": "cagliata_acida",
+       "l": "Cagliata acida"
+      },
+      {
+       "c": "siero_di_latte_acido",
+       "l": "Siero di latte acido"
+      }
+     ]
+    },
+    {
+     "c": "crosta_di_formaggio",
+     "l": "Crosta di formaggio",
+     "voci": []
+    }
+   ]
+  },
+  {
+   "c": "vegetale",
+   "l": "Vegetale",
+   "sub": [
+    {
+     "c": "erba",
+     "l": "Erba",
+     "voci": [
+      {
+       "c": "erba_tagliata",
+       "l": "Erba tagliata"
+      },
+      {
+       "c": "fieno",
+       "l": "Fieno"
+      },
+      {
+       "c": "paglia",
+       "l": "Paglia"
+      },
+      {
+       "c": "erbe_aromatiche",
+       "l": "Erbe aromatiche"
+      }
+     ]
+    },
+    {
+     "c": "erba_fermentata",
+     "l": "Erba fermentata",
+     "voci": [
+      {
+       "c": "erba_fermentata",
+       "l": "Erba fermentata"
+      },
+      {
+       "c": "fieno_fermentato",
+       "l": "Fieno fermentato"
+      }
+     ]
+    },
+    {
+     "c": "verdura_lessa",
+     "l": "Verdura lessa",
+     "voci": [
+      {
+       "c": "patata",
+       "l": "Patata"
+      },
+      {
+       "c": "cavolfiore",
+       "l": "Cavolfiore"
+      },
+      {
+       "c": "sedano",
+       "l": "Sedano"
+      },
+      {
+       "c": "piselli",
+       "l": "Piselli"
+      },
+      {
+       "c": "brodo_vegetale",
+       "l": "Brodo vegetale"
+      }
+     ]
+    },
+    {
+     "c": "agliacee",
+     "l": "Agliacee",
+     "voci": [
+      {
+       "c": "aglio",
+       "l": "Aglio"
+      },
+      {
+       "c": "cipolla",
+       "l": "Cipolla"
+      }
+     ]
+    },
+    {
+     "c": "funghi",
+     "l": "Funghi",
+     "voci": [
+      {
+       "c": "funghi_freschi",
+       "l": "Funghi freschi"
+      },
+      {
+       "c": "sottobosco",
+       "l": "Sottobosco"
+      },
+      {
+       "c": "tartufi",
+       "l": "Tartufi"
+      }
+     ]
+    },
+    {
+     "c": "legno",
+     "l": "Legno",
+     "voci": [
+      {
+       "c": "humus",
+       "l": "Humus"
+      },
+      {
+       "c": "trucioli_di_legno",
+       "l": "Trucioli di legno"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "c": "floreale",
+   "l": "Floreale",
+   "sub": [
+    {
+     "c": "miele",
+     "l": "Miele",
+     "voci": [
+      {
+       "c": "miele_uniflorali",
+       "l": "Miele uniflorali"
+      }
+     ]
+    },
+    {
+     "c": "fiori",
+     "l": "Fiori",
+     "voci": [
+      {
+       "c": "rosa",
+       "l": "Rosa"
+      },
+      {
+       "c": "violetta",
+       "l": "Violetta"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "c": "fruttato",
+   "l": "Fruttato",
+   "sub": [
+    {
+     "c": "frutta_secca",
+     "l": "Frutta secca",
+     "voci": [
+      {
+       "c": "nocciola",
+       "l": "Nocciola"
+      },
+      {
+       "c": "noce",
+       "l": "Noce"
+      },
+      {
+       "c": "castagna",
+       "l": "Castagna"
+      },
+      {
+       "c": "mandorla",
+       "l": "Mandorla"
+      }
+     ]
+    },
+    {
+     "c": "agrumi",
+     "l": "Agrumi",
+     "voci": [
+      {
+       "c": "arancia",
+       "l": "Arancia"
+      },
+      {
+       "c": "limone",
+       "l": "Limone"
+      },
+      {
+       "c": "pompelmo",
+       "l": "Pompelmo"
+      }
+     ]
+    },
+    {
+     "c": "frutti_esotici",
+     "l": "Frutti esotici",
+     "voci": [
+      {
+       "c": "banana",
+       "l": "Banana"
+      },
+      {
+       "c": "ananas",
+       "l": "Ananas"
+      }
+     ]
+    },
+    {
+     "c": "drupacee_pomacee",
+     "l": "Drupacee/pomacee",
+     "voci": [
+      {
+       "c": "albicocca",
+       "l": "Albicocca"
+      },
+      {
+       "c": "mela",
+       "l": "Mela"
+      },
+      {
+       "c": "pera",
+       "l": "Pera"
+      }
+     ]
+    },
+    {
+     "c": "frutta_trasformata",
+     "l": "Frutta trasformata",
+     "voci": [
+      {
+       "c": "frutta_essiccata",
+       "l": "Frutta essiccata"
+      },
+      {
+       "c": "frutta_fermentata",
+       "l": "Frutta fermentata"
+      }
+     ]
+    },
+    {
+     "c": "olio",
+     "l": "Olio",
+     "voci": [
+      {
+       "c": "olio_di_oliva",
+       "l": "Olio di oliva"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "c": "tostato",
+   "l": "Tostato",
+   "sub": [
+    {
+     "c": "tostato_leggero",
+     "l": "Tostato leggero",
+     "voci": [
+      {
+       "c": "brioche",
+       "l": "Brioche"
+      },
+      {
+       "c": "pane",
+       "l": "Pane"
+      },
+      {
+       "c": "vaniglia",
+       "l": "Vaniglia"
+      }
+     ]
+    },
+    {
+     "c": "tostato_medio",
+     "l": "Tostato medio",
+     "voci": [
+      {
+       "c": "caramella_mou",
+       "l": "Caramella mou"
+      }
+     ]
+    },
+    {
+     "c": "tostato_forte_e_torrefatto",
+     "l": "Tostato forte e torrefatto",
+     "voci": [
+      {
+       "c": "caramello",
+       "l": "Caramello"
+      },
+      {
+       "c": "cipolla_al_forno",
+       "l": "Cipolla al forno"
+      },
+      {
+       "c": "cioccolato_amaro",
+       "l": "Cioccolato amaro"
+      },
+      {
+       "c": "caffe",
+       "l": "Caffè"
+      },
+      {
+       "c": "cicoria",
+       "l": "Cicoria"
+      }
+     ]
+    },
+    {
+     "c": "frutta_secca_tostata",
+     "l": "Frutta secca tostata",
+     "voci": [
+      {
+       "c": "nocciola",
+       "l": "Nocciola"
+      },
+      {
+       "c": "arachide",
+       "l": "Arachide"
+      },
+      {
+       "c": "mandorla",
+       "l": "Mandorla"
+      }
+     ]
+    },
+    {
+     "c": "tostato_molto_forte",
+     "l": "Tostato molto forte",
+     "voci": [
+      {
+       "c": "affumicato",
+       "l": "Affumicato"
+      },
+      {
+       "c": "bruciato",
+       "l": "Bruciato"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "c": "animale",
+   "l": "Animale",
+   "sub": [
+    {
+     "c": "animale",
+     "l": "Animale",
+     "voci": [
+      {
+       "c": "vacca",
+       "l": "Vacca"
+      },
+      {
+       "c": "pecora",
+       "l": "Pecora"
+      },
+      {
+       "c": "capra",
+       "l": "Capra"
+      },
+      {
+       "c": "bufala",
+       "l": "Bufala"
+      }
+     ]
+    },
+    {
+     "c": "stalla_mandria",
+     "l": "Stalla, Mandria",
+     "voci": [
+      {
+       "c": "stalla_di_vacche",
+       "l": "Stalla di vacche"
+      },
+      {
+       "c": "cuoio",
+       "l": "Cuoio"
+      },
+      {
+       "c": "sudore",
+       "l": "Sudore"
+      }
+     ]
+    },
+    {
+     "c": "carne",
+     "l": "Carne",
+     "voci": [
+      {
+       "c": "brodo_di_carne",
+       "l": "Brodo di carne"
+      }
+     ]
+    },
+    {
+     "c": "pellette_caglio",
+     "l": "Pellette, Caglio",
+     "voci": [
+      {
+       "c": "pellette_di_vitello",
+       "l": "Pellette di vitello"
+      }
+     ]
+    },
+    {
+     "c": "letame",
+     "l": "Letame",
+     "voci": [
+      {
+       "c": "letame_bovino",
+       "l": "Letame bovino"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "c": "speziato",
+   "l": "Speziato",
+   "sub": [
+    {
+     "c": "speziato_riscaldante",
+     "l": "Speziato riscaldante",
+     "voci": [
+      {
+       "c": "pepe",
+       "l": "Pepe"
+      }
+     ]
+    },
+    {
+     "c": "speziato_rinfrescante",
+     "l": "Speziato rinfrescante",
+     "voci": [
+      {
+       "c": "menta",
+       "l": "Menta"
+      }
+     ]
+    },
+    {
+     "c": "spezie",
+     "l": "Spezie",
+     "voci": [
+      {
+       "c": "noce_moscata",
+       "l": "Noce moscata"
+      },
+      {
+       "c": "chiodi_di_garofano",
+       "l": "Chiodi di garofano"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "c": "altro",
+   "l": "Altro",
+   "sub": [
+    {
+     "c": "altro",
+     "l": "Altro",
+     "voci": [
+      {
+       "c": "lievito",
+       "l": "Lievito"
+      },
+      {
+       "c": "acido_propionico",
+       "l": "Acido propionico"
+      },
+      {
+       "c": "acido_butirrico",
+       "l": "Acido butirrico"
+      },
+      {
+       "c": "alcol_etilico",
+       "l": "Alcol etilico"
+      },
+      {
+       "c": "rancido",
+       "l": "Rancido"
+      },
+      {
+       "c": "salame",
+       "l": "Salame"
+      },
+      {
+       "c": "pesce_sotto_sale",
+       "l": "Pesce sotto sale"
+      },
+      {
+       "c": "ammoniaca_o_ammoniacale",
+       "l": "Ammoniaca o ammoniacale"
+      },
+      {
+       "c": "acido_acetico_o_aceto",
+       "l": "Acido acetico o aceto"
+      },
+      {
+       "c": "agro",
+       "l": "Agro"
+      },
+      {
+       "c": "sulfureo",
+       "l": "Sulfureo"
+      },
+      {
+       "c": "sapone",
+       "l": "Sapone"
+      },
+      {
+       "c": "ammuffito",
+       "l": "Ammuffito"
+      },
+      {
+       "c": "putrido",
+       "l": "Putrido"
+      },
+      {
+       "c": "gomma",
+       "l": "Gomma"
+      },
+      {
+       "c": "insilato",
+       "l": "Insilato"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}
