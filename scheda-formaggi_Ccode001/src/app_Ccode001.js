@@ -126,6 +126,10 @@ function codecV(v,enc){
   const out={};
   for(const [k,val] of Object.entries(v||{})){
     if(val===undefined||val===null||k[0]==='_'||k.endsWith('_draft')) continue;
+    if(k==='da_riconciliare'){ // gruppi di categoria precompilati dall'Atlante e non ancora confermati
+      if(Array.isArray(val)&&val.length) out[k]=val.map(x=>{const g=GRP.cat_.find(g=>(enc?g.l:g.c)===x);return g?(enc?g.c:g.l):x;});
+      continue;
+    }
     let done=false;
     for(const pre of ['cat_','pres_']){
       if(!k.startsWith(pre)) continue;
@@ -271,7 +275,7 @@ const hasAny=k=>{const x=S&&S.v?S.v[k]:undefined;return Array.isArray(x)?x.lengt
 /* ---------- Calcolo Avanzamento Fasi ---------- */
 function phaseDone(id){
   switch(id){
-    case 'id': return hasAny('denominazione') && catVal()!=='' && presVal()!=='';
+    case 'id': return hasAny('denominazione') && catVal()!=='' && presVal()!=='' && !pendingCat().length;
     case 'vista': return ['forma','facce','scalzo','tipsup','aspetto','colsup'].some(hasAny);
     case 'pasta': return ['colpasta','sottocrosta_p','occhiatura_p','erbor_p','discont_p','strpasta'].some(hasAny);
     case 'olfatto': return hasAny('odori_int') || hasAny('odori_items');
@@ -682,6 +686,27 @@ function crumb(key,dr){
 function groupPick(prefix,groups,multi=[]){
   return Object.entries(groups).map(([g,opts])=>{const k=prefix+g;
     return [sub(g),multi.includes(g)?chips(opts,get(k,[]),o=>toggleMulti(k,o),true):chips(opts,get(k),o=>pickOne(k,o))];});
+}
+/* Riconciliazione con il campione: «Degusta» copia dall'Atlante tutte le varianti ammesse per la
+   denominazione. I gruppi con più di una voce restano segnalati finché l'assaggiatore non li
+   modifica o li conferma per il campione in esame. */
+const pendingCat=()=>{const a=S&&S.v?S.v.da_riconciliare:null;return Array.isArray(a)?a.filter(g=>g in CAT):[];};
+function resolveCat(g){
+  const a=pendingCat().filter(x=>x!==g);
+  if(a.length)S.v.da_riconciliare=a;else delete S.v.da_riconciliare;
+}
+function catPick(){
+  const pend=pendingCat();
+  return Object.entries(CAT).map(([g,opts])=>{
+    const k='cat_'+g;
+    const isP=pend.includes(g);
+    return [
+      h('div',{class:'sub'},g,
+        isP?h('span',{class:'recon-badge no-gloss'},'da riconciliare'):null,
+        isP?h('button',{type:'button',class:'link',onclick:()=>{resolveCat(g);save();render();}},'Confermo per questo campione'):null),
+      chips(opts,get(k,[]),o=>{if(isP)resolveCat(g);toggleMulti(k,o);},true)
+    ];
+  });
 }
 function catValFrom(v){
   const a=Object.keys(CAT).map(g=>{
@@ -1293,7 +1318,11 @@ const PHASES=[
      h('div',{class:'row',style:'margin-top:8px;padding-top:6px;border-top:1px solid var(--line)'},
        h('span',{class:'sub',style:'margin:0'},'Confronta con il disciplinare / scheda tecnica ufficiale:'),
        h('button',{type:'button',class:'btn sm',onclick:copyAndOpenOnaf},'Atlante Formaggi ONAF ↗'))),
-   card('Categoria *',groupPick('cat_',CAT,Object.keys(CAT)),
+   card('Categoria *',
+     pendingCat().length?h('div',{class:'miss no-gloss',style:'margin-bottom:8px'},
+       h('b',{},'Dati da riconciliare con il campione. '),
+       'Le voci segnalate arrivano dall’Atlante e riportano tutte le varianti ammesse per la denominazione, non il campione in esame: togli quelle che non valgono oppure conferma.'):null,
+     catPick(),
      h('label',{class:'f',for:'f_categoria'},'Altro / precisazioni'),h('input',{type:'text',id:'f_categoria','data-fk':'categoria',value:get('categoria',''),oninput:e=>set('categoria',e.target.value,false)})),
    card('Note di presentazione *',groupPick('pres_',PRES,['Accompagnamenti','Anomalie']),
      h('div',{class:'grid2',style:'margin-top:6px'},
@@ -1388,6 +1417,7 @@ function getMissingEssential(){
   const miss=[];
   if(!get('denominazione'))miss.push({label:'Denominazione (Campione)',step:0});
   if(!catVal())miss.push({label:'Categoria (Campione)',step:0});
+  if(pendingCat().length)miss.push({label:'Categoria da riconciliare con il campione ('+pendingCat().length+')',step:0});
   if(!presVal())miss.push({label:'Note di presentazione (Campione)',step:0});
   if(!['forma','facce','scalzo','tipsup','aspetto','colsup'].some(hasAny))miss.push({label:'1 · Aspetto esterno',step:1});
   if(!['colpasta','sottocrosta_p','occhiatura_p','erbor_p','discont_p','strpasta'].some(hasAny))miss.push({label:'2 · Aspetto interno',step:2});
@@ -1935,12 +1965,15 @@ function startTastingFromAtlas(c){
   if(t.caglio && t.caglio.length) v['cat_Tipologia caglio']=[...t.caglio];
   if(t.coagulazione && t.coagulazione.length) v['cat_Tipologia coagulazione']=[...t.coagulazione];
 
+  const daRic=Object.keys(CAT).filter(g=>Array.isArray(v['cat_'+g])&&v['cat_'+g].length>1);
+  if(daRic.length) v.da_riconciliare=daRic;
+
   // Se c'è una scheda aperta completamente vuota, riutilizziamola; altrimenti ne creiamo una nuova
   const curHasData = !S || !DB.cur || (S.v && (S.v.denominazione || Object.keys(S.v).some(k=>k!=='data' && S.v[k])));
   const id = curHasData ? newId() : DB.cur;
   DB.sheets[id]={step:0,v,updated:Date.now()};
   openSheet(id);
-  showToast('Scheda precompilata per «'+c.nome+'»');
+  showToast('Scheda precompilata per «'+c.nome+'»'+(daRic.length?' · '+daRic.length+' voci da riconciliare con il campione':''));
 }
 
 function buildAtlasPage(){
@@ -2447,7 +2480,7 @@ function csvCell(val){
 function exportAllCsv(){
   const headers=[
     'Data','Località / Luogo','Commissione','Nome Assaggiatore','Codice Campione','Denominazione','Riconoscimento','Variante',
-    'Categoria','Tipologia Caglio','Tipologia Coagulazione','Presentazione','1.1 Forma','1.2 Facce','1.3 Scalzo','1.4 Tipologia Superficie',
+    'Categoria','Tipologia Caglio','Tipologia Coagulazione','Presentazione','Categoria da riconciliare','1.1 Forma','1.2 Facce','1.3 Scalzo','1.4 Tipologia Superficie',
     '1.5 Aspetto Superficie','1.6 Colore Superficie','2.1 Colore Pasta','2.2 Sottocrosta',
     '2.3 Occhiatura','2.4 Erborinatura','2.5 Discontinuità','2.6 Struttura Pasta',
     '3.1 Odori Intensità','3.1 Odori Descrittori',
@@ -2468,7 +2501,7 @@ function exportAllCsv(){
     const v=DB.sheets[id].v||{};
     const row=[
       v.data||'', v.luogo||'', v.commissione||'', v.assaggiatore||'', v.campione||'', v.denominazione||'', v.riconoscimento||'', v.variante||'',
-      catValFrom(v), join(v['cat_Tipologia caglio']||''), join(v['cat_Tipologia coagulazione']||''), presValFrom(v),
+      catValFrom(v), join(v['cat_Tipologia caglio']||''), join(v['cat_Tipologia coagulazione']||''), presValFrom(v), join(v.da_riconciliare||''),
       regStr(v,'forma'), regStr(v,'facce'), regStr(v,'scalzo'), v.tipsup||'',
       join(v.aspetto||[]), [join(v.colsup||[]),v.colsup_u,v.colsup_i].filter(Boolean).join(' - '),
       [join(v.colpasta||[]),v.colpasta_u,v.colpasta_i].filter(Boolean).join(' - '),

@@ -231,3 +231,4 @@ button .gloss-term:hover,a .gloss-term:hover{background:none;color:inherit}
   .card{break-inside:avoid;border-color:#bbb;padding:8px 10px;margin:0}
   .sum dl{font-size:12px;gap:2px 8px}
 }
+.recon-badge{display:inline-block;margin:0 8px;padding:1px 8px;border:1px solid var(--warn);border-radius:999px;color:var(--warn);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.03em}
