@@ -2105,7 +2105,7 @@ function buildAtlasPage(){
     'data-fk':'atlas_q','aria-label':'Cerca un formaggio',
     placeholder:'Cerca per nome o parola chiave (es. Castelmagno, Caglio, Scamorza...)',
     value:atlasCheeseQuery,
-    style:'min-height:120px;height:120px;font-size:19px;padding:14px 18px;border-width:2px;border-radius:11px',
+    style:'min-height:50px;height:50px;font-size:17px;padding:8px 14px;border-width:2px;border-radius:10px',
     oninput:e=>{
       atlasCheeseQuery=e.target.value;
       if(!atlasCheeseQuery.trim()) locatedId=null;
@@ -2233,6 +2233,39 @@ function buildAtlasPage(){
     ],v=>{filterCrosta=v;})
   );
 
+  // Fascia che resta fissa sotto la barra ONAF mentre si scorrono i risultati
+  const stickyBar=h('div',{class:'atlas-sticky noprint'},
+        h('div',{class:'search-box'},searchInput,searchDrop),
+        (()=>{
+          const pills=[];
+          if(selectedRic!=='Tutti') pills.push({lbl:'Riconoscimento: '+selectedRic,clr:()=>{selectedRic='Tutti';activePreset='';}});
+          if(filterLatte!=='Tutti') pills.push({lbl:'Latte: '+filterLatte,clr:()=>{filterLatte='Tutti';activePreset='';}});
+          if(filterPasta!=='Tutte') pills.push({lbl:'Pasta: '+filterPasta,clr:()=>{filterPasta='Tutte';activePreset='';}});
+          if(filterTec!=='Tutte') pills.push({lbl:'Tecnologia: '+filterTec,clr:()=>{filterTec='Tutte';activePreset='';}});
+          if(filterCaglio!=='Tutti') pills.push({lbl:'Caglio: '+filterCaglio,clr:()=>{filterCaglio='Tutti';activePreset='';}});
+          if(filterCoag!=='Tutte') pills.push({lbl:'Coagulazione: '+filterCoag,clr:()=>{filterCoag='Tutte';activePreset='';}});
+          if(filterCrosta!=='Tutte') pills.push({lbl:'Crosta: '+filterCrosta,clr:()=>{filterCrosta='Tutte';activePreset='';}});
+          if(filterIconicOnly) pills.push({lbl:'★ Abbinamenti d’Autore',clr:()=>{filterIconicOnly=false;activePreset='';}});
+          if(selectedRegion!=='Tutte') pills.push({lbl:'Regione: '+selectedRegion,clr:()=>{selectedRegion='Tutte';}});
+          return pills.length ? h('div',{class:'tags',style:'margin:8px 0 4px'},
+            pills.map(p=>h('span',{class:'tag'},p.lbl,h('button',{type:'button','aria-label':'Rimuovi filtro',onclick:()=>{p.clr();render();}},'×')))
+          ) : null;
+        })(),
+        h('div',{class:'row',style:'margin-top:8px'},
+          h('span',{class:'sub',style:'margin:0'},
+            selectedRegion!=='Tutte'
+              ? [
+                  h('b',{style:'color:var(--ink)'},`${counts[selectedRegion]||0} ${(counts[selectedRegion]||0)===1?'formaggio':'formaggi'} in ${selectedRegion}`),
+                  taxActive ? ` (su ${allFiltered.length} in Italia con questi filtri):` : ':'
+                ]
+              : [
+                  h('b',{style:'color:var(--ink)'},`${allFiltered.length} formaggi`),
+                  taxActive ? ' in Italia corrispondenti ai filtri selezionati (clicca una regione per filtrare):' : ' per regione:'
+                ]
+          )
+        )
+  );
+
   const mapCard=card('Mappa d\'Italia — Esplorazione Geografica e Tassonomica ONAF',
     h('div',{class:'italy-wrap'},
       h('div',{class:'italy-map-box'},
@@ -2278,36 +2311,7 @@ function buildAtlasPage(){
           return h('button',{type:'button',class:'reg-badge'+(selectedRic===ric?' on':''),onclick:()=>{activePreset='';selectedRic=ric;render();}},
             `${ric} (${cnt})`);
         })),
-        h('div',{class:'search-box'},searchInput,searchDrop),
         locatedBox,
-        (()=>{
-          const pills=[];
-          if(selectedRic!=='Tutti') pills.push({lbl:'Riconoscimento: '+selectedRic,clr:()=>{selectedRic='Tutti';activePreset='';}});
-          if(filterLatte!=='Tutti') pills.push({lbl:'Latte: '+filterLatte,clr:()=>{filterLatte='Tutti';activePreset='';}});
-          if(filterPasta!=='Tutte') pills.push({lbl:'Pasta: '+filterPasta,clr:()=>{filterPasta='Tutte';activePreset='';}});
-          if(filterTec!=='Tutte') pills.push({lbl:'Tecnologia: '+filterTec,clr:()=>{filterTec='Tutte';activePreset='';}});
-          if(filterCaglio!=='Tutti') pills.push({lbl:'Caglio: '+filterCaglio,clr:()=>{filterCaglio='Tutti';activePreset='';}});
-          if(filterCoag!=='Tutte') pills.push({lbl:'Coagulazione: '+filterCoag,clr:()=>{filterCoag='Tutte';activePreset='';}});
-          if(filterCrosta!=='Tutte') pills.push({lbl:'Crosta: '+filterCrosta,clr:()=>{filterCrosta='Tutte';activePreset='';}});
-          if(filterIconicOnly) pills.push({lbl:'★ Abbinamenti d’Autore',clr:()=>{filterIconicOnly=false;activePreset='';}});
-          if(selectedRegion!=='Tutte') pills.push({lbl:'Regione: '+selectedRegion,clr:()=>{selectedRegion='Tutte';}});
-          return pills.length ? h('div',{class:'tags',style:'margin:8px 0 4px'},
-            pills.map(p=>h('span',{class:'tag'},p.lbl,h('button',{type:'button','aria-label':'Rimuovi filtro',onclick:()=>{p.clr();render();}},'×')))
-          ) : null;
-        })(),
-        h('div',{class:'row',style:'margin-top:8px'},
-          h('span',{class:'sub',style:'margin:0'},
-            selectedRegion!=='Tutte'
-              ? [
-                  h('b',{style:'color:var(--ink)'},`${counts[selectedRegion]||0} ${(counts[selectedRegion]||0)===1?'formaggio':'formaggi'} in ${selectedRegion}`),
-                  taxActive ? ` (su ${allFiltered.length} in Italia con questi filtri):` : ':'
-                ]
-              : [
-                  h('b',{style:'color:var(--ink)'},`${allFiltered.length} formaggi`),
-                  taxActive ? ' in Italia corrispondenti ai filtri selezionati (clicca una regione per filtrare):' : ' per regione:'
-                ]
-          )
-        ),
         h('div',{class:'chips'},
           h('button',{type:'button',class:'reg-badge'+(selectedRegion==='Tutte'&&!locatedCheese?' on':''),onclick:()=>{selectedRegion='Tutte';locatedId=null;render();}},'Tutte le regioni'),
           ...ITALY_REGIONS.map(r=>{
@@ -2424,7 +2428,7 @@ function buildAtlasPage(){
     }
   }
 
-  return [mapCard, ...topHighlightCards, ...regCards];
+  return [stickyBar, mapCard, ...topHighlightCards, ...regCards];
 }
 
 function buildList(){
@@ -2583,6 +2587,12 @@ function mount(...nodes){
     h('div',{style:'margin-top:6px'},h('button',{type:'button',class:'btn sm primary',onclick:exportAll},'Scarica backup ora (JSON)'))) : null;
   document.getElementById('main').replaceChildren(...[warn,...nodes].filter(Boolean));
 }
+// Altezza reale della barra ONAF, usata dalla fascia di ricerca fissa dell'Atlante
+function syncHeaderHeight(){
+  const hd=document.querySelector('header.top');
+  if(hd)document.documentElement.style.setProperty('--hdr-h',hd.offsetHeight+'px');
+}
+window.addEventListener('resize',syncHeaderHeight);
 document.addEventListener('keydown',e=>{
   if(e.key!=='Escape')return;
   const m=document.getElementById('gloss-modal-root')||document.getElementById('pairing-modal-root');
@@ -2672,6 +2682,7 @@ function render(){
       h('h2',{class:'phase',style:'font-size:23px'},'Atlante & Degustazione Formaggi d’Italia',h('small',{},`${getFullAtlas().length} formaggi ufficiali ONAF · esplora la mappa e clicca «Degusta» per compilare la scheda`)),
       ...buildAtlasPage()
     );
+    syncHeaderHeight();
     restoreFocus();
     return;
   }

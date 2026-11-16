@@ -110,7 +110,7 @@ a.btn{display:inline-flex;align-items:center;justify-content:center;text-decorat
   .step{flex:1 1 0;min-width:0;padding:7px 8px;font-size:13px;text-align:center;white-space:normal;line-height:1.15}
   main{max-width:1200px;padding:12px 20px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;align-items:start}
   main>*{margin:0}
-  main>h2.phase,main>.miss,main>.backup-banner,main>.row,main>.card.wide{grid-column:1/-1}
+  main>h2.phase,main>.miss,main>.backup-banner,main>.row,main>.card.wide,main>.atlas-sticky{grid-column:1/-1}
   h2.phase{font-size:21px;margin:0}
   .card{padding:13px 15px;border-radius:12px}
   .card h3{font-size:12px;margin-bottom:8px}
@@ -232,3 +232,9 @@ button .gloss-term:hover,a .gloss-term:hover{background:none;color:inherit}
   .sum dl{font-size:12px;gap:2px 8px}
 }
 .recon-badge{display:inline-block;margin:0 8px;padding:1px 8px;border:1px solid var(--warn);border-radius:999px;color:var(--warn);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.03em}
+.atlas-sticky{position:-webkit-sticky;position:sticky;top:var(--hdr-h,60px);z-index:30;background:var(--card);border:1px solid var(--accent);border-radius:12px;padding:8px 12px;margin-bottom:9px;box-shadow:0 4px 12px rgba(0,0,0,.12)}
+.atlas-sticky .search-box{margin-bottom:0}
+.atlas-sticky .search-results{max-height:38vh;overflow-y:auto}
+.atlas-sticky .tags{margin:6px 0 0}
+.atlas-sticky .row{margin:6px 0 0}
+#atlas-results{scroll-margin-top:calc(var(--hdr-h,60px) + 150px)}
